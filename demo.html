@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 🔹 Basic SEO -->
+<title>🌸Er. Anamika की ओर से हार्दिक शुभकामनाएं | Greeting Page</title>
+<meta name="description" content="Er. Anamika की तरफ से आपको और आपके परिवार को ढेर सारी शुभकामनाएं 💐। इस खास Greeting Page पर पाएँ प्यार, आदर और मुस्कान से भरे संदेश ✨।">
+<meta name="keywords" content="Vikas Gangwar, Greetings, शुभकामनाएं, Diwali, Greeting Page, Happy Moments, Wishes, Festival Greetings">
+
+<!-- 🔹 Author Info -->
+<meta name="author" content="Er. Anamika">
+
+<!-- 🔹 Open Graph (Facebook, WhatsApp, Telegram ke liye) -->
+<meta property="og:title" content="🌸Er. Anamika की ओर से हार्दिक शुभकामनाएं | Greeting Page">
+<meta property="og:description" content="आपको और आपके परिवार को Er. Anamika की ओर से हार्दिक शुभकामनाएं 💐✨">
+<meta property="og:image" content="Gemini_Generated_Image_e0uy8je0uy8je0uy.png"> <!-- Yahan apne image ka link daalna -->
+<meta property="og:url" content="https://example.com"> <!-- Yahan apne greeting page ka actual URL daalna -->
+<meta property="og:type" content="website">
+
+<!-- 🔹 Favicon (browser tab icon) -->
+<link rel="icon" type="image/png" href="Gemini_Generated_Image_e0uy8je0uy8je0uy.png">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+  body { display:flex; justify-content:center; align-items:center; height:100vh; background:#ffe4e1; margin:0; font-family:'Baloo 2', cursive; }
+  .input-box { background:white; padding:30px 40px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.1); text-align:center; }
+  input { width:100%; padding:12px; margin:15px 0; border-radius:8px; border:1px solid #ccc; font-size:16px; }
+  button { padding:12px 20px; border:none; border-radius:8px; background:#ff4081; color:white; font-size:16px; cursor:pointer; }
+ button:hover{
+    transform: scale(1.05);
+    /* background-color: #f55443; */
+    background-image: radial-gradient(rgb(255, 151, 234), rgb(245, 67, 239), rgb(160, 20, 128));
+ }
+ h2 { margin:0; }
+</style>
+</head>
+<body>
+
+<div class="input-box">
+  <h2>आपका शुभनाम क्या है ? ✨🪔</h2>
+  <form id="nameForm">
+    <input type="text" id="nameInput" placeholder="कृपया अपना शुभनाम लिखें ✨🖊️" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+const form = document.getElementById('nameForm');
+const input = document.getElementById('nameInput');
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = input.value.trim();
+  if(name){
+    // Name ko localStorage me save karo
+    localStorage.setItem('username', name);
+    // Greeting page pe redirect
+    window.location.href = 'page2.html';
+  } else {
+    alert('Kripya apna naam daalein');
+  }
+});
+</script>
+
+</body>
+</html>
